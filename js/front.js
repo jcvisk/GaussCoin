@@ -30,3 +30,66 @@ $(".js-video-button").modalVideo({
 
 /* Inicializando WOW */
 new WOW().init();
+
+
+$('#item1').click(active1);
+$('#item2').click(active2);
+$('#item3').click(active3);
+$('#item4').click(active4);
+$('#item5').click(active5);
+
+function active1(){
+    if ( !$('#item1').hasClass("active")) {
+        $('#item1').addClass("active");
+
+        $("#item2").removeClass("active");
+        $("#item3").removeClass("active");
+        $("#item4").removeClass("active");
+        $("#item5").removeClass("active");
+
+    }
+}
+function active2(){
+    if ( !$('#item2').hasClass("active")) {
+        $('#item2').addClass("active");
+
+        $("#item1").removeClass("active");
+        $("#item3").removeClass("active");
+        $("#item4").removeClass("active");
+        $("#item5").removeClass("active");
+
+    }
+}
+function active3(){
+    if ( !$('#item3').hasClass("active")) {
+        $('#item3').addClass("active");
+
+        $("#item1").removeClass("active");
+        $("#item2").removeClass("active");
+        $("#item4").removeClass("active");
+        $("#item5").removeClass("active");
+
+    }
+}
+function active4(){
+    if ( !$('#item4').hasClass("active")) {
+        $('#item4').addClass("active");
+
+        $("#item1").removeClass("active");
+        $("#item2").removeClass("active");
+        $("#item3").removeClass("active");
+        $("#item5").removeClass("active");
+
+    }
+}
+function active5(){
+    if ( !$('#item5').hasClass("active")) {
+        $('#item5').addClass("active");
+
+        $("#item1").removeClass("active");
+        $("#item2").removeClass("active");
+        $("#item3").removeClass("active");
+        $("#item4").removeClass("active");
+
+    }
+}
