@@ -38,6 +38,16 @@ h2{
 h5{
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
 }
+.glass{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 var(--verde);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    transition: ease 1s;
+}
+.bg-transparent{
+    transition: ease 1s;
+}
 .navbar-light .navbar-toggler-icon {
     background-image: url(../img/toggler-icon.svg);
 }
@@ -46,7 +56,8 @@ h5{
 }
 .divider{
     border: 3px solid var(--verde);
-    width: 15%;
+    background-color: var(--verde);
+    width: 20%;
 }
 .container-fluid {
     padding-right: 7% !important;
@@ -72,9 +83,9 @@ h5{
 .content{
     position: absolute;
     top:50%;
-    left: 55%;
+    left: 54%;
     transform: translate(-50%, -50%);
-    width: 110%;
+    width: 100%;
     
 }
 .content1{
@@ -89,6 +100,11 @@ h5{
 } 
 .img-rps {
     width: calc(100px + (250 - 100) * ((100vw - 300px) / (1600 - 300)));
+    transition: ease 1s;
+}
+._img-rps {
+    width: calc(75px + (200 - 75) * ((100vw - 300px) / (1600 - 300)));
+    transition: ease 1s;
 }
 .txt {
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
@@ -187,6 +203,7 @@ h5{
     background-color: transparent;
     border-bottom: 2px solid white;
     color: white;
+    font-size: calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 .contact textarea:focus,
 .contact input:focus{
@@ -207,25 +224,35 @@ h5{
     ._p-5 {
         padding: 3rem !important;
     }
-
-    .content{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 110%;
-        
-    }
 }
 
 @media (min-width: 768px) {
     .content{
         position: absolute;
         top:50%;
-        left: 50%;
+        left: 52%;
         transform: translate(-50%, -50%);
-        width: 110%;
-        
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .content{
+        position: absolute;
+        top:50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content{
+        position: absolute;
+        top:50%;
+        left: 50.9%;
+        transform: translate(-50%, -50%);
+        width: 100%;
     }
 }
 
