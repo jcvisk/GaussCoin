@@ -116,7 +116,13 @@ a.language span:nth-child(2){
 .content p{
     color: white !important;
     font-weight: 900 !important;
-} 
+}
+.content2{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .img-rps {
     width: calc(100px + (250 - 100) * ((100vw - 300px) / (1600 - 300)));
     transition: ease 1s;

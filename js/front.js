@@ -31,6 +31,9 @@ $(".js-video-button").modalVideo({
 /* Inicializando WOW */
 new WOW().init();
 
+copyright = new Date();
+update = copyright.getFullYear();
+document.getElementById('year').innerHTML = update;
 
 $('#item1').click(active1);
 $('#item2').click(active2);
