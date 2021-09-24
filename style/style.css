@@ -1,0 +1,237 @@
+:root{
+    --verde: #9dd23f;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "lato-bold";
+    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "lato-black";
+    src: url(../assets/fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+    font-family: "lato-black-italic";
+    src: url(../assets/fonts/Lato/Lato-BlackItalic.ttf);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "lato-black";
+    letter-spacing: 4px;
+}
+h2{
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+h5{
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../img/toggler-icon.svg);
+}
+.navbar-toggler {
+    border: none !important;
+}
+.divider{
+    border: 3px solid var(--verde);
+    width: 15%;
+}
+.container-fluid {
+    padding-right: 7% !important;
+    padding-left: 7% !important;
+}
+.bg-green{
+    background-color: var(--verde);
+}
+.mt-10{
+    margin-top: 10%;
+}
+.mt-15{
+    margin-top: 16.5%;
+}
+.mt-20{
+    margin-top: 20%;
+}
+
+.section{
+    position: relative;
+    display: block;
+}
+.content{
+    position: absolute;
+    top:50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    
+}
+.content1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content p{
+    color: white !important;
+    font-weight: 900 !important;
+} 
+.img-rps {
+    width: calc(100px + (250 - 100) * ((100vw - 300px) / (1600 - 300)));
+}
+.txt {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: "lato-black";
+    color: white !important;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color: var(--verde) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--verde) !important;
+}
+
+/*--- OUR PORPOSE ---*/
+.our-purpose{
+    background-image: url(../img/bg/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/*--- NEWS ---*/
+.news{
+    background-image: url(../img/bg/bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-new{
+    border-radius: 0 !important;
+    border: 4px solid white;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.btn-new:hover{
+    background-color: white;
+    color: #221c18;
+}
+.btn-new h2{
+    margin: 0;
+    letter-spacing: normal;
+}
+
+.br{
+    border-right: 2px solid var(--verde);
+}
+.bl{
+    border-left: 2px solid var(--verde);
+}
+
+.btn-new-gren{
+    background-color: var(--verde);
+    border: 4px solid var(--verde);
+    border-radius: 0 !important;
+    color: #221c18;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.btn-new-gren:hover{
+    background-color: transparent;
+    border: 4px solid white;
+    color: white;
+}
+.btn-new-gren h2{
+    margin: 0;
+    font-family: "lato-black-italic";
+    letter-spacing: normal;
+}
+
+.news h5{
+    letter-spacing: normal;
+}
+.news small{
+    font-family: "lato-black";
+    font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.news .card{
+    width: 65%
+}
+
+/*--- CONTACT US ---*/
+.contact{
+    background-image: url(../img/bg/bg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+}
+.contact textarea,
+.contact input{
+    border: 0;
+    border-radius: 0 !important;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.contact textarea:focus,
+.contact input:focus{
+    border: 0;
+    border-radius: 0 !important;
+    background-color: transparent;
+    color: white;
+}
+
+.contact textarea::placeholder,
+.contact input::placeholder{
+    color: white;
+}
+
+
+
+@media (min-width: 576px) {
+    ._p-5 {
+        padding: 3rem !important;
+    }
+
+    .content{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 110%;
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .content{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 110%;
+        
+    }
+}
+
+@media (max-width: 991.98px){
+    nav .container-fluid {
+        padding-right: 0% !important;
+        padding-left: 0% !important;
+    }
+}
